@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS mittels CDN eingebunden -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- Durch das Bootstrap brauchen wir kein eigenes CSS, Styling wird durch die Bootstrap Klassen erzeugt-->
+    <div class="container-md mt-5 ">
+        <div class="alert alert-success">Select your favorite destination</div>
+        
+        <ul class="list-group d-none">
+            <li class="active list-group-item">Rom</li>
+            <li class="list-group-item">Athen</li>
+            <li class="list-group-item">Madrid</li>
+        </ul>
+        
+        <button type="button" class="btn btn-primary mt-5" id="visibilityBtn">Show Items</button>
+
+        <!-- Das Ergebnis wir hier ausgegeben -->
+        <div class="alert alert-success d-none mt-5" id="result"></div>
+
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
+  
+  
